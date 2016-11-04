@@ -1,37 +1,42 @@
+---
 title: Notes and stuff by Marco Rizzoli
-name: Notes and stuff by Marco Rizzoli
-
-author:
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  tesi:
+    title: Tesi
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 name: Marco Rizzoli
+author: 
 givenName: Marco
 familyName: Rizzoli
 github: mrizzoli
 url: http://rizzoli.me.uk
-
 username: mrizzoli
 repo: notes_src
-
 scholar:
   style: apa
   sort_by: year
   order: descending
-  source: $PWD/biblio
+  source: "$PWD/biblio"
   bibliography: biblio.bib
-
 tag_page_layout: tag_page
 tag_page_dir: tag
-
-collections:
-  tesi:
-    output: true
-
 markdown: Pandoc
 pandoc:
   extensions:
   - smart
-  - bibliography: $PWD/biblio/biblio.bib
-  
--exclude: [ Gemfile,  Gemfile.lock, Rakefile, .travis.yml, ]
--highlighter: pygments
--safe: false
--paginate: 6  
+  - bibliography: "$PWD/biblio/biblio.bib"
+"-exclude":
+- Gemfile
+- Gemfile.lock
+- Rakefile
+- ".travis.yml"
+"-highlighter": pygments
+"-safe": false
+"-paginate": 6
