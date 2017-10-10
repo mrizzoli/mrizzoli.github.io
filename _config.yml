@@ -3,7 +3,7 @@ title: "Notes and Stuff"
 email: marco@rizzoli.me.uk
 baseurl: ""
 url: "http://rizzoli.me.uk/"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_description: ""
 title_image: "https://www.gravatar.com/avatar/8c19d329a182c796d7f0df65fbfd8434?s=500&d=mm"
 google_analytics: ""
 disqus_account: 
@@ -11,24 +11,51 @@ github_repository: https://github.com/mrizzoli
 addthis_id: 
 post_limit: 5
 
-# Social usernames/URLs
-twitter_username: 
-github_username:  mrizzoli
-instagram_username: 
-reddit_username: 
-linkedin_link: 
-google_plus_link: 
-stackoverflow_link: 
-xing_link:
-facebook_link:
+# For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
+baseurl: ''
+
+share:
+  facebook: true
+  twitter: true
+  gplus: true
+  linkedin: true
+  pinterest: true
+  email: true
+
+social:
+  github: mrizzoli
+  stackoverflow: ''
+  linkedin:
+  instagram: ''
+  lastfm: ''
+  rss: feed.xml
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key:
+# Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
+yandex_metrica:
 
 
-# Build settings
-markdown: kramdown
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: mrizzoli
+comments: false
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+permalink: /:year/:month/:title
 
-permalink: pretty
-exclude: [vendor]
+# Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
+#paginate: 3
+
+#highlighter: rouge
+# plugins:
+#   - jekyll-pandoc
+ 
+
+# markdown: Pandoc
+# pandoc:
+#   extensions:
+#   - smart
+#   - bibliography: $PWD/biblio/biblio.bib
+
+exclude: ['README.md', 'LICENSE', Gemfile]
