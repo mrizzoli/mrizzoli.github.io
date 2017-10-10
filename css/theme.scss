@@ -51,6 +51,13 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
+/* Body */
+
+body {
+  background: $background-color url(./pics/triangles.png);
+  //background: $background-color url(./pics/squares.png); // Another good pattern for background
+}
+
 /* Index */
 
 .index {
@@ -229,131 +236,131 @@ $screen-lg-min: 1200px;
 
 
 
-//********************************************************
-//                  Common styles
-//********************************************************
-body {
-  padding-top: 80px;
-  color: $font-color;
-  background: $background-color url(./pics/triangles.png);
-  //background: $background-color url(./pics/squares.png); // Another good pattern for background
-}
+// //********************************************************
+// //                  Common styles
+// //********************************************************
+// body {
+//   padding-top: 80px;
+//   color: $font-color;
+//   background: $background-color url(./pics/triangles.png);
+//   //background: $background-color url(./pics/squares.png); // Another good pattern for background
+// }
 
-.well {
-  background-color: $post-panel-color;
-  box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
-  border: 0;
-  border-radius: 6px;
-}
-.main-page {
-  width: 75%;
-}
+// .well {
+//   background-color: $post-panel-color;
+//   box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
+//   border: 0;
+//   border-radius: 6px;
+// }
+// .main-page {
+//   width: 75%;
+// }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+// h1 { font-size: 2em; }
+// h2 { font-size: 1.5em; }
+// h3 { font-size: 1.17em; }
+// h4 { font-size: 1.12em; }
+// h5 { font-size: .83em; }
+// h6 { font-size: .75em; }
 
-img {
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
-}
+// img {
+//   display: inline-block;
+//   margin: 0 auto;
+//   max-width: 100%;
+//   max-height: 100%;
+// }
 
-img + em {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+// img + em {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   text-align: center;
+// }
 
-blockquote {
-  color: #bbb;
-  font-size: 1em;
-}
+// blockquote {
+//   color: #bbb;
+//   font-size: 1em;
+// }
 
-a {
-  color: #8DB359;
-}
+// a {
+//   color: #8DB359;
+// }
 
-//********************************************************
-//                    Social Links
-//********************************************************
-ul.social-media {
-  text-align: center;
-  padding: 0 0 10px 0;
-  li {
-    display: inline-block;
-  }
-  li > a {
-    width: 45px;
-    height: 45px;
-    @include transition(color 0.2s);
-    display: inline-block;
-    color: white;
-    &:hover {
-      color: $accent-color;
-    }
-  }
-}
+// //********************************************************
+// //                    Social Links
+// //********************************************************
+// ul.social-media {
+//   text-align: center;
+//   padding: 0 0 10px 0;
+//   li {
+//     display: inline-block;
+//   }
+//   li > a {
+//     width: 45px;
+//     height: 45px;
+//     @include transition(color 0.2s);
+//     display: inline-block;
+//     color: white;
+//     &:hover {
+//       color: $accent-color;
+//     }
+//   }
+// }
 
 
-//********************************************************
-//                    Share
-//********************************************************
-.share-bar{
-  text-align: right;
-}
+// //********************************************************
+// //                    Share
+// //********************************************************
+// .share-bar{
+//   text-align: right;
+// }
 
-ul.share-buttons {
-  list-style: none;
-  padding: 0;
-  li {
-    display: inline-block;
-    .fa-facebook,
-    .fa-twitter,
-    .fa-google-plus,
-    .fa-linkedin,
-    .fa-envelope-o,
-    .fa-pinterest {
-      color: #ffffff
-    }
-    a {
-      text-decoration: none;
-    }
+// ul.share-buttons {
+//   list-style: none;
+//   padding: 0;
+//   li {
+//     display: inline-block;
+//     .fa-facebook,
+//     .fa-twitter,
+//     .fa-google-plus,
+//     .fa-linkedin,
+//     .fa-envelope-o,
+//     .fa-pinterest {
+//       color: #ffffff
+//     }
+//     a {
+//       text-decoration: none;
+//     }
 
-    -webkit-transition: -webkit-transform .4s;
-    -moz-transition: -moz-transform .4s;
-    -ms-transition: -ms-transform .4s;
-    -o-transition: -o-transform .4s;
-    transition: transform .4s;
-  }
+//     -webkit-transition: -webkit-transform .4s;
+//     -moz-transition: -moz-transform .4s;
+//     -ms-transition: -ms-transform .4s;
+//     -o-transition: -o-transform .4s;
+//     transition: transform .4s;
+//   }
 
-  // Square frame
-  li.share-facebook .fa-square-o { color: #3B5998;}
-  li.share-twitter .fa-square-o { color: #55acee;}
-  li.share-google-plus .fa-square-o { color: #dd4b39;}
-  li.share-linkedin .fa-square-o { color: #4875B4;}
-  li.share-pinterest .fa-square-o { color: #BD081C;}
-  li.share-envelope .fa-square-o { color: #3B5998;}
-  // Circle frame
-  li.share-facebook .fa-circle-thin { color: #3B5998;}
-  li.share-twitter .fa-circle-thin { color: #55acee;}
-  li.share-google-plus .fa-circle-thin { color: #dd4b39;}
-  li.share-linkedin .fa-circle-thin { color: #4875B4;}
-  li.share-pinterest .fa-circle-thin { color: #BD081C;}
-  li.share-envelope .fa-circle-thin { color: #3B5998;}
+//   // Square frame
+//   li.share-facebook .fa-square-o { color: #3B5998;}
+//   li.share-twitter .fa-square-o { color: #55acee;}
+//   li.share-google-plus .fa-square-o { color: #dd4b39;}
+//   li.share-linkedin .fa-square-o { color: #4875B4;}
+//   li.share-pinterest .fa-square-o { color: #BD081C;}
+//   li.share-envelope .fa-square-o { color: #3B5998;}
+//   // Circle frame
+//   li.share-facebook .fa-circle-thin { color: #3B5998;}
+//   li.share-twitter .fa-circle-thin { color: #55acee;}
+//   li.share-google-plus .fa-circle-thin { color: #dd4b39;}
+//   li.share-linkedin .fa-circle-thin { color: #4875B4;}
+//   li.share-pinterest .fa-circle-thin { color: #BD081C;}
+//   li.share-envelope .fa-circle-thin { color: #3B5998;}
 
-  li:hover {
-    -webkit-transform: scale(1.3,1.3);
-    -moz-transform: scale(1.3,1.3);
-    -ms-transform: scale(1.3,1.3);
-    -o-transform: scale(1.3,1.3);
-    transform: scale(1.3,1.3);
-  }
-}
+//   li:hover {
+//     -webkit-transform: scale(1.3,1.3);
+//     -moz-transform: scale(1.3,1.3);
+//     -ms-transform: scale(1.3,1.3);
+//     -o-transform: scale(1.3,1.3);
+//     transform: scale(1.3,1.3);
+//   }
+// }
 
 
