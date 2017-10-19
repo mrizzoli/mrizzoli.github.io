@@ -1,29 +1,31 @@
 ---
-layout: page
+layout: home_page
 make-smaller-titles: true
 ---
 
 <div class="container-fluid ">
-    <div class="row">
+  <div class="row">
 
-        <div class="col-md-12 main content-panel">
+    <div class="col-md-12 main content-panel">
 
-            <div class="gravatar">
-                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
-            </div>
+      <div class="gravatar">
+        <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+      </div>
 
-            <h1 class="header author-header" itemprop="headline"><a href="http://rizzoli.me.uk/notebook">{{ site.title }}</h1></a>
+      <h1 class="header author-header" itemprop="headline"><a href="{{site.url}}/notebook">{{ site.title }}</h1></a>
 
-            <div class="author-text">
-                {{ site.title_description }}
-            </div>
-
-          </div>
-          <div class="author-text">
-
-              <h2>My Geographic History</h2>
-              <script src="https://embed.github.com/view/geojson/mrizzoli/notes_src/master/my_geographic_history.json"></script>
-
-          </div>
+      <div class="author-text">
+        {{ site.title_description }}
+      </div>
+      <h2 class="header author-header"> My Geographic History</h2>
     </div>
+    
+  </div>
+  
+</div>
+
+<div class="map">
+<br />
+  <script src="https://embed.github.com/view/geojson/mrizzoli/notes_src/master/my_geographic_history.json?width=1130"></script>
+  
 </div>

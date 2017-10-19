@@ -88,7 +88,8 @@ html, body, button, input, select, textarea {
 //                  Common styles
 //********************************************************
 body {
-  padding-top: 20px;
+  padding-top: 100px;
+  height: 100%;
   color: $font-color;
   background: $background-color url(./pics/triangles.png);
   //background: $background-color url(./pics/squares.png); // Another good pattern for background
@@ -133,6 +134,11 @@ body {
     margin-bottom: 0px;
     font-size: 32px;
     width: 100%;
+}
+
+.map {
+    // width: 1240;
+    // height: 480;
 }
 
 h1 { font-size: 2em; }
@@ -386,7 +392,7 @@ nav.shrink .navbar-toggle {
   background-color: $footer-background-color;
   font: normal 16px sans-serif;
   padding: 20px 25px;
-  margin-top: 80px;
+  // margin-top: 80px;
   text-align: center;
   bottom: 0;
   left: 0;
