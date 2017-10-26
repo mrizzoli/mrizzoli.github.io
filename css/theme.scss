@@ -34,7 +34,7 @@ $note-color: #87CEFA;
 $warning-color: #ffff00;
 
 //********************************************************
-//                  From kult.css
+//                  Fonts
 //********************************************************
 
 @font-face {
@@ -68,6 +68,10 @@ $warning-color: #ffff00;
     src: local("Ubuntu Light Italic"), local("Ubuntu-LightItalic"), url("http://themes.googleusercontent.com/static/fonts/ubuntu/v4/DZ_YjBPqZ88vcZCcIXm6VqfTCPadK0KLfdEfFtGWCYw.woff") format("woff");
 }
 
+//********************************************************
+//                  Common styles
+//********************************************************
+
 html {
     font-size: 80%;
 }
@@ -83,10 +87,6 @@ html, body, button, input, select, textarea {
 	font-weight: 300;
 }
 
-
-//********************************************************
-//                  Common styles
-//********************************************************
 body {
   padding-top: 100px;
   height: 100%;
@@ -94,21 +94,25 @@ body {
   background: $background-color url(./pics/triangles.png);
   //background: $background-color url(./pics/squares.png); // Another good pattern for background
 }
+
+section {
+    height:100%;
+}
+
 .well {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 6px;
 }
+
 .main-page {
   width: 75%;
 }
 
-
 .gravatar {
      text-align: center;
 }
-
 
 .author-text {
     text-align: center;
@@ -185,6 +189,13 @@ a {
 a:hover {
     color: #8DB359;
 }
+
+
+
+
+
+
+
 
 //********************************************************
 //                    Social Links

@@ -7,25 +7,52 @@ make-smaller-titles: true
   <div class="row">
 
     <div class="col-md-12 main content-panel">
+      <section id="profile">
+        <div class="gravatar">
+          <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+        </div>
 
-      <div class="gravatar">
-        <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
-      </div>
+        <h1 class="header author-header" itemprop="headline"><a href="{{site.url}}/notebook">{{ site.title }}</h1></a>
 
-      <h1 class="header author-header" itemprop="headline"><a href="{{site.url}}/notebook">{{ site.title }}</h1></a>
+        <div class="author-text">
+          {{ site.title_description }}
+          <br />
+          <br /><a href="#abstracts" data-scroll><i class="icon fa
+        fa-chevron-down fa-3x"></i></a>
+        </div>
+        </section>
+      <section id="abstracts">
+        <h2 class="header author-header"> Last Activity </h2>
+        {% for post in site.posts limit:3 %}
+        <div class="col-md-4">
+          <h2 class="post-title">
+            <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">
+              {{ post.title }}
+            </a>
+          </h2>
+          <div class="post-descr">
+            <p>
+              {{ post.description }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+        <div class="col-md-12 author-text">
+          <a href="#history" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
+          <a href="#profile" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
+        </div>
+      </section>
 
-      <div class="author-text">
-        {{ site.title_description }}
-      </div>
-      <h2 class="header author-header"> My Geographic History</h2>
+      <section id="history">
+        <h2 class="header author-header"> My Geographic History</h2>
+        <br />
+        <script src="https://embed.github.com/view/geojson/mrizzoli/mrizzoli.github.io/master/my_geographic_history.json?width=1130"></script>
+        <div class="col-md-12 author-text">
+          <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
+        </div>
+      </section>
     </div>
     
   </div>
   
-</div>
-
-<div class="map">
-<br />
-  <script src="https://embed.github.com/view/geojson/mrizzoli/mrizzoli.github.io/master/my_geographic_history.json?width=1130"></script>
-  
-</div>
+</div>  
