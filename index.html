@@ -5,8 +5,8 @@ make-smaller-titles: true
 
 <div class="container-fluid ">
   <div class="row">
-
     <div class="col-md-12 main content-panel">
+
       <section id="profile">
         <div class="gravatar">
           <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
@@ -17,12 +17,13 @@ make-smaller-titles: true
         <div class="author-text">
           {{ site.title_description }}
         </div>
-     <div class="col-md-12 bottom-buttons">
-        <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
-        </div>
       </section>
+        <div class="row align-items-end bottom-buttons">
+          <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
+        </div>
 
       <section id="abstracts">
+
         <h2 class="header author-header"> Last Activity </h2>
         {% for post in site.posts limit:3 %}
         <div class="col-md-4">
@@ -38,23 +39,22 @@ make-smaller-titles: true
           </div>
         </div>
         {% endfor %}
-     
-      <div class="col-md-12 bottom-buttons">
-        <a href="#history" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
-        <a href="#profile" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
-      </div>
       </section>
+        <div class="row align-items-end bottom-buttons fixed-bottom">
+          <a href="#history" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
+          <a href="#profile" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
+        </div>
 
       <section id="history">
+
         <h2 class="header author-header"> My Geographic History</h2>
         <br />
         <script src="https://embed.github.com/view/geojson/mrizzoli/mrizzoli.github.io/master/my_geographic_history.json?width=1130"></script>
       </section>
-      <div class="col-md-12 bottom-buttons">
+        <div class="row align-items-end bottom-buttons">
           <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
-      </div>
+        </div>
+
     </div>
-    
   </div>
-  
 </div>  

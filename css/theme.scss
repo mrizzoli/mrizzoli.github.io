@@ -96,13 +96,12 @@ body {
 }
 
 section {
-    height:100%;
-    padding-top:20px;
+    padding-top:100px;
+    height:90%;
 }
 
 .bottom-buttons {
-    padding-top:45%;
-    //padding-bottom:50px;
+    padding-bottom:50px;
     text-align:center;
 }
 
@@ -118,7 +117,8 @@ section {
 }
 
 .gravatar {
-     text-align: center;
+    margin-top:20px;
+    text-align: center;
 }
 
 .author-text {
@@ -133,7 +133,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 
-    margin-top: 0px;
+    margin-top:20px;
     padding-top: 15px;
     font-size: 30px;
 }
