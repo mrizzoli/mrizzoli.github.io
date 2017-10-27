@@ -28,8 +28,7 @@ make-smaller-titles: true
         {% for repository in site.github.public_repositories %}
         <div class="col-md-4">
           <h2 class="post-title">
-            {{ repository.name }}<a href="{{repository.url}}">
-             </a>
+           <a href="{{repository.html_url}}"> {{ repository.name }}</a>
           </h2>
           <div class="post-descr">
             <p>
