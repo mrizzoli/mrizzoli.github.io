@@ -16,11 +16,12 @@ make-smaller-titles: true
 
         <div class="author-text">
           {{ site.title_description }}
-          <br />
-          <br /><a href="#abstracts" data-scroll><i class="icon fa
-        fa-chevron-down fa-3x"></i></a>
         </div>
-        </section>
+     <div class="col-md-12 bottom-buttons">
+        <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
+        </div>
+      </section>
+
       <section id="abstracts">
         <h2 class="header author-header"> Last Activity </h2>
         {% for post in site.posts limit:3 %}
@@ -37,20 +38,21 @@ make-smaller-titles: true
           </div>
         </div>
         {% endfor %}
-        <div class="col-md-12 author-text">
-          <a href="#history" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
-          <a href="#profile" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
-        </div>
+     
+      <div class="col-md-12 bottom-buttons">
+        <a href="#history" data-scroll><i class="icon fa fa-chevron-down fa-3x"></i></a>
+        <a href="#profile" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
+      </div>
       </section>
 
       <section id="history">
         <h2 class="header author-header"> My Geographic History</h2>
         <br />
         <script src="https://embed.github.com/view/geojson/mrizzoli/mrizzoli.github.io/master/my_geographic_history.json?width=1130"></script>
-        <div class="col-md-12 author-text">
-          <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
-        </div>
       </section>
+      <div class="col-md-12 bottom-buttons">
+          <a href="#abstracts" data-scroll><i class="icon fa fa-chevron-up fa-3x"></i></a>
+      </div>
     </div>
     
   </div>
